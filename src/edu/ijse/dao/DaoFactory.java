@@ -4,10 +4,10 @@
  */
 package edu.ijse.dao;
 
-import edu.ijse.dao.custom.impl.CustomerDaoImpl;
-import edu.ijse.dao.custom.impl.ItemDaoImpl;
 import edu.ijse.dao.custom.impl.OrderDaoImpl;
 import edu.ijse.dao.custom.impl.OrderDetailDaoImpl;
+import edu.ijse.dao.custom.impl.BookDaoimpl;
+
 
 /**
  *
@@ -29,20 +29,22 @@ public class DaoFactory {
 
     public SuperDao getDao(DaoTypes type) {
         switch (type) {
-            case ITEM:
-                return new ItemDaoImpl();
-            case CUSTOMER:
-                return new CustomerDaoImpl();
             case ORDER:
                 return new OrderDaoImpl();
             case ORDER_DETAIL:
                 return new OrderDetailDaoImpl();
+            case BOOK:
+                return new BookDaoimpl();
+            case MEMBER:
+                return new BookDaoimpl();
+                
+                
             default:
                 return null;
         }
     }
 
     public enum DaoTypes {
-        ITEM, CUSTOMER, ORDER, ORDER_DETAIL;
+       ORDER, ORDER_DETAIL,BOOK,MEMBER;
     }
 }

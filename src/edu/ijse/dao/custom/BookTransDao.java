@@ -9,8 +9,8 @@ import edu.ijse.entity.OrderEntity;
 
 /**
  *
- * @author jayashan
+ * @author jayas
  */
-public interface OrderDao extends CrudDao<OrderEntity, String>{
+public interface BookTransDao extends CrudDao<OrderEntity, String>{
     
 }

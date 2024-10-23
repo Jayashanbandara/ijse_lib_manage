@@ -4,8 +4,11 @@
  */
 package edu.ijse;
 
-import edu.ijse.view.ItemView;
-import edu.ijse.view.OrderView;
+///import edu.ijse.view.ItemView;
+///import edu.ijse.view.OrderView;
+import edu.ijse.view.BookView;
+import edu.ijse.view.BookTransView;
+
 
 /**
  *
@@ -17,7 +20,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
-        new OrderView().setVisible(true);
+        new BookView().setVisible(true);
+        //new BookTransView().setVisible(true);
     }
     
 }

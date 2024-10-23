@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author anjan
+ * @author jayashan
  */
 public class DBConnection {
     private static DBConnection dBConnection;
@@ -18,7 +18,7 @@ public class DBConnection {
     
     private DBConnection() throws ClassNotFoundException, SQLException{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket", "root", "root");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/uni_library", "root", "root");
     }
     
     public static DBConnection getInstance() throws ClassNotFoundException, SQLException{

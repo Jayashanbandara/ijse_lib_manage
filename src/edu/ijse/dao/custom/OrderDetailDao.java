@@ -9,7 +9,7 @@ import edu.ijse.entity.OrderDetailEntity;
 
 /**
  *
- * @author anjan
+ * @author jayashan
  */
 public interface OrderDetailDao extends CrudDao<OrderDetailEntity, Object>{
     

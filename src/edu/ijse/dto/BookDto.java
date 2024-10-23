@@ -2,25 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package edu.ijse.entity;
+package edu.ijse.dto;
 
 /**
  *
  * @author jayas
  */
-public class BookEntity {
-    
+public class BookDto {
     private String BookCode;
     private String title;
     private String author;
     private String isbn;
-    private Integer category_id;
+    private int category_id;
     private String publisher;
-    private Integer published_year;
-    private Integer total_copies;
-    private Integer available_copies;
+    private int published_year;
+    private int total_copies;
+    private int available_copies;
 
-    public BookEntity(String BookCode, String title, String author, String isbn, Integer category_id, String publisher, Integer published_year, Integer total_copies, Integer available_copies) {
+    public BookDto(String BookCode, String title, String author, String isbn, int category_id, String publisher, int published_year, int total_copies, int available_copies) {
         this.BookCode = BookCode;
         this.title = title;
         this.author = author;
@@ -31,6 +30,7 @@ public class BookEntity {
         this.total_copies = total_copies;
         this.available_copies = available_copies;
     }
+
 
     /**
      * @return the BookCode
@@ -91,14 +91,14 @@ public class BookEntity {
     /**
      * @return the category_id
      */
-    public Integer getCategory_id() {
+    public int getCategory_id() {
         return category_id;
     }
 
     /**
      * @param category_id the category_id to set
      */
-    public void setCategory_id(Integer category_id) {
+    public void setCategory_id(int category_id) {
         this.category_id = category_id;
     }
 
@@ -119,50 +119,50 @@ public class BookEntity {
     /**
      * @return the published_year
      */
-    public Integer getPublished_year() {
+    public int getPublished_year() {
         return published_year;
     }
 
     /**
      * @param published_year the published_year to set
      */
-    public void setPublished_year(Integer published_year) {
+    public void setPublished_year(int published_year) {
         this.published_year = published_year;
     }
 
     /**
      * @return the total_copies
      */
-    public Integer getTotal_copies() {
+    public int getTotal_copies() {
         return total_copies;
     }
 
     /**
      * @param total_copies the total_copies to set
      */
-    public void setTotal_copies(Integer total_copies) {
+    public void setTotal_copies(int total_copies) {
         this.total_copies = total_copies;
     }
 
     /**
      * @return the available_copies
      */
-    public Integer getAvailable_copies() {
+    public int getAvailable_copies() {
         return available_copies;
     }
 
     /**
      * @param available_copies the available_copies to set
      */
-    public void setAvailable_copies(Integer available_copies) {
+    public void setAvailable_copies(int available_copies) {
         this.available_copies = available_copies;
     }
 
     @Override
     public String toString() {
-        return "BookEntity{" + "BookCode=" + BookCode + ", title=" + title + ", author=" + author + ", isbn=" + isbn + ", category_id=" + category_id + ", publisher=" + publisher + ", published_year=" + published_year + ", total_copies=" + total_copies + ", available_copies=" + available_copies + '}';
+        return "BookDto{" + "BookCode=" + BookCode + ", title=" + title + ", author=" + author + ", isbn=" + isbn + ", category_id=" + category_id + ", publisher=" + publisher + ", published_year=" + published_year + ", total_copies=" + total_copies + ", available_copies=" + available_copies + '}';
     }
-
-   
+    
+    
     
 }
